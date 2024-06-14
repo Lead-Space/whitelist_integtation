@@ -1,0 +1,8 @@
+{
+  "name": "leadspace/domos",
+  "autoload": {
+    "psr-4": {
+      "Domos\\": "classes"
+    }
+  }
+}
