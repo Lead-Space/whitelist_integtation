@@ -4,7 +4,7 @@ require_once "../include/consts.php";
 require_once "../include/functions.php";
 
 
-use Domos\CRest;
+use WhiteList\CRest;
 
 
 
