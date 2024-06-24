@@ -5,7 +5,7 @@ require_once "../include/functions.php";
 
 use WhiteList\CRest;
 
-$binanceUserList = json_decode(file_get_contents("../integration_files/Passport_users_Binance.json"), true);
+$binanceUserList = getIntegrationDataFromFile(SMARTS_ENTITY_TYPE_FILENAMES[1032]);
 $cachedUsers = getDataFromCache("users.json");
 $addedUsers = [];
 $requestsAmount = 0;

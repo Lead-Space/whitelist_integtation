@@ -15,13 +15,13 @@ const SMARTS_ENTITY_TYPE_IDS = [
 ];
 
 const SMARTS_ENTITY_TYPE_FILENAMES = [
-	1032 => "Passport_users_Binance.json",
-	1036 => "Balance_Binance.json",
-	1040 => "Bybit_Balance.json",
-	1044 => "sdelki_binance.json",
-	1048 => "income_withdraw.json",
-	1052 => "sdelki_Bybit.json",
-	1056 => "Passport_users_bybit.JSON",
+	1032 => "2024-06-20_Passport_users_Binance.json",
+	1036 => "2024-06-20_Balance_Binance.json",
+	1040 => "2024-06-20_Bybit_Balance.json",
+	1044 => "2024-06-20_sdelki_binance.json",
+	1048 => "2024-06-20_income_withdraw.json",
+	1052 => "2024-06-20_sdelki_Bybit.json",
+	1056 => "2024-06-20_Passport_users_bybit.JSON",
 ];
 
 const SMARTS_FIELDS_ID = [
