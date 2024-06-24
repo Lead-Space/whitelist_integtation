@@ -1,6 +1,6 @@
 <?php
 
-use Domos\CRest;
+use WhiteList\CRest;
 
 function out($var, $var_name = ''): void {
 	echo '<pre style="outline: 1px dashed red;padding:5px;margin:10px;color:white;background:black;">';
