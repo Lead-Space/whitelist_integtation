@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Domos\B24;
+namespace WhiteList\B24;
 
-use Domos\CRest;
+use WhiteList\CRest;
 
 class Deal extends BaseEntity
 {

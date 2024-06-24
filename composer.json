@@ -1,8 +1,8 @@
 {
-  "name": "leadspace/domos",
+  "name": "leadspace/whitelist",
   "autoload": {
     "psr-4": {
-      "Domos\\": "classes"
+      "WhiteList\\": "classes"
     }
   }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Domos;
+namespace WhiteList;
 class CRest
 {
 	const BATCH_COUNT = 50;//count batch 1 query

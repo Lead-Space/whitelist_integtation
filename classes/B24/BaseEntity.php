@@ -1,8 +1,8 @@
 <?php
 
-namespace Domos\B24;
+namespace WhiteList\B24;
 
-use Domos\CRest;
+use WhiteList\CRest;
 
 abstract class BaseEntity
 {

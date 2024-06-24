@@ -1,6 +1,6 @@
 <?php
 
-namespace Domos;
+namespace WhiteList;
 
 class Config
 {
