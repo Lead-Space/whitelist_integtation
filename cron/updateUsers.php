@@ -3,7 +3,7 @@ require_once "../vendor/autoload.php";
 require_once "../include/consts.php";
 require_once "../include/functions.php";
 
-use Domos\CRest;
+use WhiteList\CRest;
 
 $binanceUserList = json_decode(file_get_contents("../integration_files/Passport_users_Binance.json"), true);
 $cachedUsers = getDataFromCache("users.json");
