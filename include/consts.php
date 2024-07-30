@@ -42,7 +42,7 @@ const SMARTS_FIELDS_ID = [
 		"spot_balance" => "ufCrm10_1718257297397",
 		"spot_finres" => "ufCrm10_1718257317254",
 		"spot_balance_privat" => "ufCrm10_1722343841246",
-		"futeres_balance_privat" => "ufCrm10_1722343766457",
+		"future_balance_privat" => "ufCrm10_1722343766457",
 	],
 	1040 => [
 //		"kyc_profile_id" => "",
@@ -53,7 +53,7 @@ const SMARTS_FIELDS_ID = [
 		"spot_balance" => "ufCrm12_1718257462793",
 		"spot_finres" => "ufCrm12_1718257487824",
 		"spot_balance_privat" => "ufCrm12_1722343891263",
-		"futeres_balance_privat" => "ufCrm12_1722343881656",
+		"future_balance_privat" => "ufCrm12_1722343881656",
 	],
 	1044 => [
 //		"kyc_profile_id" => "",
