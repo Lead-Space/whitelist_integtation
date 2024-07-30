@@ -3,7 +3,7 @@ const CONTACT_WC_ID_FIELD = "UF_CRM_1718258265774";
 const CONTACT_KYC_DATE_FIELD = "UF_CRM_1718258286738";
 const CONTACT_WC_REG_DATE_FIELD = "UF_CRM_1718258306016";
 const CONTACT_TG_EXIST_FIELD = "UF_CRM_1718258326831";
-const MAX_USERS_TO_UPDATE = 15;
+const MAX_USERS_TO_UPDATE = 50;
 const SMARTS_ENTITY_TYPE_IDS = [
 	"Паспорт пользователя Binance" => 1032,
 	"Балансы Binance" => 1036,
@@ -41,6 +41,8 @@ const SMARTS_FIELDS_ID = [
 		"futures_finres" => "ufCrm10_1718257275616",
 		"spot_balance" => "ufCrm10_1718257297397",
 		"spot_finres" => "ufCrm10_1718257317254",
+		"spot_balance_privat" => "ufCrm10_1722343841246",
+		"futeres_balance_privat" => "ufCrm10_1722343766457",
 	],
 	1040 => [
 //		"kyc_profile_id" => "",
@@ -50,6 +52,8 @@ const SMARTS_FIELDS_ID = [
 		"futures_finres" => "ufCrm12_1718257445056",
 		"spot_balance" => "ufCrm12_1718257462793",
 		"spot_finres" => "ufCrm12_1718257487824",
+		"spot_balance_privat" => "ufCrm12_1722343891263",
+		"futeres_balance_privat" => "ufCrm12_1722343881656",
 	],
 	1044 => [
 //		"kyc_profile_id" => "",

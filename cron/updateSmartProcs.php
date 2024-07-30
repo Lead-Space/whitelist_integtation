@@ -47,7 +47,8 @@ foreach (SMARTS_ENTITY_TYPE_FILENAMES as $ENTITY_TYPE_ID => $FILENAME) {
 		if ($updatedUsers > MAX_USERS_TO_UPDATE) break;
 	}
 }
-out($mainBatch);
-out($cachedSmarts);
+setLog($mainBatch);
+//out($cachedSmarts);
+
 executeMainBatch($mainBatch);
 setCacheData("smarts.json", $cachedSmarts);

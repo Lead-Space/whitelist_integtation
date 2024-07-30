@@ -15,6 +15,22 @@ function out($var, $var_name = ''): void {
 	echo '</pre>';
 }
 
+function setLog(mixed $arData, string $fileName = 'default', string $title = ''): void {
+	$path = __DIR__ . '/../logs/' . date("Y-m-d/H") . '/';
+
+	if (!file_exists($path)) {
+		@mkdir($path, 0775, true);
+	}
+
+	$path .= $fileName . '.log';
+	$log = "\n------------------------\n";
+	$log .= date("Y.m.d H:i:s") . "\n";
+	$log .= (strlen($title) > 0 ? $title : 'DEBUG') . "\n";
+	$log .= print_r($arData, 1);
+	$log .= "\n------------------------\n";
+	file_put_contents($path, $log, FILE_APPEND);
+}
+
 function formatDataForBatch(string $method, array $params = []): string {
 	return $method . "?" . urldecode(http_build_query($params));
 }
