@@ -16,10 +16,18 @@ function out($var, $var_name = ''): void {
 }
 
 function setLog(mixed $arData, string $fileName = 'default', string $title = ''): void {
-	$path = __DIR__ . '/../logs/' . date("Y-m-d/H") . '/';
+	$logsDir = __DIR__ . '/../logs/';
+	$path = $logsDir . date("Y-m-d/H") . '/';
 
 	if (!file_exists($path)) {
 		@mkdir($path, 0775, true);
+	}
+
+	$logs = array_diff(scandir($logsDir), [".", ".."]);
+	foreach ($logs as $log) {
+		if (strtotime($log) < strtotime("-1 month")) {
+			deleteOutdatedLogDir($logsDir . $log);
+		}
 	}
 
 	$path .= $fileName . '.log';
@@ -29,6 +37,18 @@ function setLog(mixed $arData, string $fileName = 'default', string $title = '')
 	$log .= print_r($arData, 1);
 	$log .= "\n------------------------\n";
 	file_put_contents($path, $log, FILE_APPEND);
+}
+
+function deleteOutdatedLogDir($dir): void {
+	$files = glob($dir . '/*');
+	foreach ($files as $file) {
+		if (is_dir($file)) {
+			deleteOutdatedLogDir($file);
+		} else {
+			unlink($file);
+		}
+	}
+	rmdir($dir);
 }
 
 function formatDataForBatch(string $method, array $params = []): string {
